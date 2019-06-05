@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>  -->             <!-- Firebase CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!-- jQuery CDN -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">                         <!-- Custom CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>          <!-- P5.JS library -->
+  <script src="js/sketch.js"></script>                                                         <!-- Sketch.js, the p5.js file. -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>App</title>
+
+  
+  <!-- <script defer src="/__/firebase/5.0.4/firebase-app.js"></script> --> <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/5.0.4/firebase-database.js"></script> --> <!-- include only the Firebase features as you need -->
+ <!--  <script defer src="/__/firebase/init.js"></script> --> <!-- initialize the SDK after all desired features are loaded -->
+
+  <link rel="icon" type="image/png" href="graphics/fav.png">
+
+</head>
+<body>
+
+  <div id="header" class="page-header">
+    <div class="text-center h3">Rijksmuseum Boilerplate App</div>
+  </div>
+
+  <div class="container-fluid no-padding"> 
+    <div id="bannerRow" class="row"> <!-- Row with banner -->
+      <div class="col-md-12">
+        <img src="graphics/r-banner.png" alt="placeholder 960" height="250px" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+      Draw Something!
+  <div id="sketch-holder" >
+  </div>
+</div>
+  <div class="container-fluid"> <!-- Container that spans the width of the page -->
+    <div id="messageRow" class="row"> <!-- Row with name/message input and message list. -->
+
+      <div id="inputArea" class="col-4"> <!-- Column (col-4 means 40% of width) one of two -->
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+          </div>
+          <input id="author" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+        <div class="input-group input-group-small mb-3">
+          <textarea id="message" rows="6" cols="70" class="form-control" aria-label="With text area"></textarea>
+        </div>
+        <button id="sendMsgBtn" type="button" class="btn btn-outline-primary">Submit</button>
+      </div>
+
+
+      <div id="messageListArea" class="col"> <!-- Column of unspecified width -->
+        <div id="presmsg" class="card">
+          <div class="card-header">
+            Placeholder
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/logic.js"></script>
+
+  </body>
+  </html>

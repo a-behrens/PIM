@@ -1,0 +1,44 @@
+body {
+	background-color: #f2f2f2;
+}
+
+.container-fluid {
+	/*border: 1px solid black;*/
+	background-color: white;
+	text-align: center;
+
+}
+#sketch-holder {
+}
+
+
+#messageRow {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 10px;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#header {
+	padding: 30px;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#bannerRow {
+	background-color: black;
+}
+
+#messageListArea {
+	overflow-y: scroll;
+	max-height: 700px;
+}
+
+#messageListArea p {
+	font-size: 0.8em;
+}
