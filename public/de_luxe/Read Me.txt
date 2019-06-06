@@ -1,0 +1,11 @@
+Font created by : Rizky Andyno Ramadhan (a.k.a. Dichi)
+Font Name : De Luxe
+
+This font is 100% free, but please contact me for commercial uses.
+Suggestion? please contact me at diciganteng01@icloud.com
+
+
+Log
+[1.0]  Initial Release!
+[1.1]  Replace some odd-looking glyph with the new one!
+[1.2]  Fix kerning and weight issues, and new bold+condensed variant.

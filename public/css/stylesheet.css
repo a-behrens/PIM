@@ -25,6 +25,20 @@ body {
 	
 }
 
+#jumbotron_home {
+	background-color: #0c0c0c;
+
+}
+
+#jumbotron_header {
+	color: white; 
+	font-size: 550%;
+}
+
+#jumbotron_text {
+	color: white;
+}
+
 .no-padding {
   padding-left: 0;
   padding-right: 0;
