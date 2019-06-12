@@ -1,0 +1,120 @@
+.navbar{
+        margin-bottom:0;
+        border-radius:0;
+}
+img{
+    height: 100%;
+    width: 1000%;
+}
+*{margin:0px;
+    padding: 0px;
+    box-sizing:border-box
+}
+.clicked {
+  background-color: green !important;
+}
+.work{
+    font-size: 350% !important; 
+    padding-top: 20px !important;
+}
+.meal{
+    font-size: 350% !important; 
+    padding-top: 20px !important;
+}
+.lead_2{
+    font-size: 150%; 
+    padding-top: 20px;
+    text-align: justify;
+}
+#nutri{
+    font-weight: bold;
+}
+
+footer{
+    background: rgb(0, 0, 0);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000,);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    width: 100%;
+}
+.head_image{
+    width: 100%;
+}
+.full-container{
+    width: 100%
+    margin:auto;
+    padding-left: 2%;
+    margin-top: 5%; 
+
+}
+.footer{}.container-body{
+    display:flex;
+    justify-content: space-between;
+}
+.img{
+    width: 10%;
+    height: 10%;
+    padding: 1%;
+}
+.img2{
+    width: 12%;
+    height: 12%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+label{
+    margin-left: 10%;
+    color: white !important;
+}
+.hello{
+    margin-left: 32% !important;
+}
+.row1{
+    margin-left: 32%;
+}
+.row{
+    margin-left: -30% !important;
+    padding-bottom: 3% !important;
+}
+@media screen and (max-width: 1100px){
+    .container-body{
+         flex-wrap: wrap;
+         }
+         .colum1{
+            max-width:100%;
+         }
+    .colum2,
+    .colum3{
+      margin-top:20px;
+          }
+}
+.photo-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#9F3;
+    background-size: cover;
+    }
+    .close-photo-overlay {
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: #fff;
+    z-index: 2;
+    padding: 6px 9px;
+    border: 1px solid #fff;
+    }
+.imgBox {
+    width: 170%;
+   
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 15px 0;
+}

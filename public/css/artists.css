@@ -1,0 +1,150 @@
+body {
+	background-color: #ffffff;
+	/*border-top: 7px solid #f64747;*/
+
+}
+@font-face {
+    font-family: 'Rijksfont'; /*a name to be used later*/
+    src: url('de_luxe/De-Luxe-Light Condensed.ttf'); /*URL to font*/
+}
+
+.trans--grow{
+  -webkit-transition: width 2.25s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 2.25s  ease-out;
+  width : 1%;
+ 
+}
+.grow{
+  width:100%;
+  height: 5px;
+  background-color: #f64747;
+
+}
+
+#header {
+	padding: 15px;
+	
+}
+#jumbotron_home {
+	/*background-image: url(images/jumbotron_back.png);
+	background-size: cover;*/
+    background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #FFFFFF, #f9f9f9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#f9f9f9, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 8%;
+
+}
+
+#jumbotron_header {
+	color: #f64747;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 450%;
+}
+#navbar_brand{
+	margin-left: 6%;
+	color: #f64747;
+}
+#navbar_text{
+	color: #0c0c0c;
+}
+#nav{
+	background-color: #f9f9f9;  /* fallback for old browsers */
+	
+}
+#button_nav{
+	margin-top: 6%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#search{
+	margin-right: 5%;
+}
+#search_col{
+	background-color: #f64747;
+	color: white;
+}
+
+#dark_mode{
+	background-color: #0c0c0c;
+	width: 100%;
+	/*border-top: 3px solid #f64747;*/
+}
+#nights{
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 350%;
+
+	padding-top: 4%;
+}
+.dropcap{
+	font: normal normal 400 6.3rem/6rem "GT Sectra Fine","Source Sans Pro",sans-serif;
+	text-transform: uppercase;
+    color: #f64747;
+    padding: 0 .5rem 0 0;
+    margin: -0.1rem 0 -1rem;
+    float: left;
+}
+#night-description{
+	color: #ffffff;
+	font-family: 'Lora', serif;
+	font-size: 120%;
+	padding-bottom: 2%;
+	padding-top: 4%;
+
+}
+
+#first_h2{
+	color: #f64747;
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	padding-bottom: 2%;
+	padding-top: 4%;
+	/*border-top: 3px solid #f64747;*/
+}
+
+#second_h2{
+	color: #f64747;
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	/*border-top: 3px solid #f64747;*/
+
+}
+
+
+#footer_head{
+	background-color: #f64747;
+	color: white;
+	margin-top: 5%;
+}
+#footer-divider{
+	margin-top: 10%;
+}
+#Footer-header-1{
+	color: #ffffff;
+}
+#Facebook, #Twitter, #insta {
+	color: #ffffff;
+}
+
+
+.hovereffect {
+  width: auto;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #0c0c0c;
+}
+.footerhr {
+	width: 60px;
+	height: 1.5px;
+	background-color: #f64747;
+}
+.footer-text{
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+}

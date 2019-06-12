@@ -1,5 +1,11 @@
 body {
-	background-color: #f2f2f2;
+	background-color: #ffffff;
+	/*border-top: 7px solid #f64747;*/
+
+}
+@font-face {
+    font-family: 'Rijksfont'; /*a name to be used later*/
+    src: url('de_luxe/De-Luxe-Light Condensed.ttf'); /*URL to font*/
 }
 
 .container-fluid {
@@ -8,35 +14,126 @@ body {
 	text-align: center;
 
 }
-#sketch-holder {
+.trans--grow {
+  -webkit-transition: width 2.25s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 2.25s  ease-out;
+  width : 10%;
+ 
 }
+.grow {
+  width:100%;
+  height: 5px;
+  background-color: #f64747;
 
-#messageRow {
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	/*margin-top: 10px;*/
-	padding-top: 40px;
-	padding-bottom: 40px;
+}
+.footerhr {
+	width: 60px;
+	height: 1.5px;
+	background-color: #f64747;
 }
 
 #header {
 	padding: 15px;
 	
 }
-
 #jumbotron_home {
-	background-color: #0c0c0c;
+	/*background-image: url(images/jumbotron_back.png);
+	background-size: cover;*/
+    background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #FFFFFF, #f9f9f9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#f9f9f9, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 8%;
 
 }
 
 #jumbotron_header {
-	color: white; 
-	font-size: 550%;
+	font-family: 'Rijksfont';
+	color: #0c0c0c; 
+	font-size: 650%;
 }
 
 #jumbotron_text {
+	color: #0c0c0c;
+}
+#home_message{
+	font-size: 210%;
+	margin-top: -8%;
+	font-family: 'Dancing Script', cursive;
+	padding-top: 8%;
+	padding-bottom: 7%;
+	color: #0c0c0c;
+}
+#navbar_brand{
+	margin-left: 6%;
+	color: #f64747;
+}
+#navbar_text{
+	color: #0c0c0c;
+}
+#nav{
+	background-color: #f9f9f9;  /* fallback for old browsers */
+	
+}
+#button_nav{
+	margin-top: 6%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#search{
+	margin-right: 5%;
+}
+#search_col{
+	background-color: #f64747;
 	color: white;
+}
+#discover_button{
+	background-color: #f64747;
+	color: white;
+}
+
+#first_h2{
+	color: #f64747;
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	padding-bottom: 2%;
+	padding-top: 4%;
+	/*border-top: 3px solid #f64747;*/
+}
+
+#second_h2{
+	color: #f64747;
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	/*border-top: 3px solid #f64747;*/
+
+}
+
+#idea{
+	font-size: 150%;
+	padding-bottom: 2%;
+	/*color: white;*/
+}
+#second_divider{
+	margin-top: 7%;
+}
+
+#paintings{
+	font-size: 200%;
+
+}
+
+#footer_head{
+	background-color: #f64747;
+	color: white;
+	margin-top: 5%;
+}
+#footer-divider{
+	margin-top: 10%;
+}
+#Footer-header-1{
+	color: #f64747;
 }
 
 .no-padding {
@@ -48,11 +145,91 @@ body {
 	background-color: black;
 }
 
-#messageListArea {
-	overflow-y: scroll;
-	max-height: 700px;
+
+.hovereffect {
+  width: auto;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #0c0c0c;
 }
 
-#messageListArea p {
-	font-size: 0.8em;
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 100px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
