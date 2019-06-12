@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!-- jQuery CDN -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                      <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" type="text/css" href="css/artists.css">                         <!-- Custom CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>          <!-- P5.JS library -->
+
+  <script src="js/sketch.js"></script>                                                         <!-- Sketch.js, the p5.js file. -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/popper.js"></script>
+  <script src="https://unpkg.com/tooltip.js
+"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rijksmuseum App | Vermeer</title>
+
+
+  <!-- <script defer src="/__/firebase/5.0.4/firebase-app.js"></script> --> <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/5.0.4/firebase-database.js"></script> --> <!-- include only the Firebase features as you need -->
+ <!-- <script defer src="/__/firebase/init.js"></script> --> <!-- initialize the SDK after all desired features are loaded -->
+
+  <link rel="icon" type="image/png" href="graphics/fav.png">
+</head>
+
+<body>
+<nav id="nav" class="navbar navbar-expand-lg ">
+    <a id="navbar_brand" class="navbar-brand" href="#"><cite>RIJKS STORIES</cite></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a id="navbar_text" class="nav-link" href="#">ART <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="navbar_text" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ARTISTS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Rembrandt van Rijn</a>
+            <a class="dropdown-item" href="#">Jan Havicksz Steen</a>
+            <a class="dropdown-item" href="#">Willem Claesz Heda</a>
+            <a class="dropdown-item" href="#">Johannes Vermeer</a>
+            <a class="dropdown-item" href="#">Gerard ter Borch</a>
+            <a class="dropdown-item" href="#">Gabriel Metsu</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">De Metaale Pot</a>
+          </div>
+        </li>
+      </ul>
+      <form id="search" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="search_col" class="btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+<div class="container-fluid">
+  <div id="jumbotron_home" class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 id="jumbotron_header">JOHANNES VERMEER</h1>
+    </div>
+  </div>
+</div>
+
+<div id="dark_mode" class="container-fluid">
+    <hr class="trans--grow hr2">
+    <div class="row">
+        <div class="container">
+            <h2 id="nights" class="lead text-center">The Love Letter</h2>
+        </div>
+        <div class="container">
+            <div class="col-12">
+                <p id="night-description" class="col-12 text-justify float-left lead"><span class="dropcap">V</span>ermeer chose an unusual vantage point for this painting. From a dim space in the foreground, a glimpse is afforded of another room with a domestic scene. An elegantly dressed woman looks up expectantly at a maidservant, who has just handed her a letter. The seascape on the wall behind them may well allude to the epistle’s subject: during the 17th century, the sea was often compared to love, and the lover to a ship.
+                </p>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+                <!--<p id="night-description" class=" col-6 text-justify float-right">Militia Company of District II under the Command of Captain Frans Banninck Cocq, Known as
+                the ‘Night Watch’. Rembrandt’s largest, most famous canvas was made for the Arquebusiers guild hall. This was one of
+                several halls of Amsterdam’s civic guard, the city’s militia and police. Rembrandt was the first to paint figures in a group portrait
+                    actually doing something. The captain, dressed in black, is telling his lieutenant to start the company marching.
+                    The
+                    guardsmen are getting into formation. Rembrandt used the light to focus on particular details, like the captain’s
+                    gesturing hand and the young girl in the foreground. She was the company mascot.
+                </p>-->
+            </div>
+        </div>
+    <div class="container-fluid">
+        <img class="img-fluid" src="css/Images/SK-C-5.jpeg" alt="">
+    </div>
+</div>
+
+<hr class="trans--grow hr2">
+<footer class="page-footer font-small blue-grey lighten-5">
+  <div id="footer-box" class="container text-center text-md-left mt-5">
+    <div class="row mt-3 dark-grey-text">
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <h6 id="Footer-header-1" class="text-uppercase lead"><cite>RIJKS STORIES</cite></h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto footerhr">
+        <p class="footer-text">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 id="Footer-header-1" class="text-uppercase lead"><cite>Contact</cite></h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto footerhr">
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <h6 id="Footer-header-1" class="text-uppercase lead"><cite>Usefull Links</cite></h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto footerhr">
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+        <p class="footer-text">
+          EXAMPLE
+        </p>
+
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 id="Footer-header-1" class="text-uppercase lead"><cite>WHERE TO FIND US</cite></h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto footerhr">
+        <p class="footer-text">
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p class="footer-text">
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p class="footer-text">
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p class="footer-text">
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89
+        </p>
+      </div>
+    </div>
+  </div>
+   <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a id="Facebook" class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a id="Twitter" class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4 fa-2x"> </i>
+          </a>
+
+          <!--Instagram-->
+          <a id="insta" class="ins-ic">
+            <i class="fab fa-instagram white-text fa-2x"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+</footer>
+</body>
+</html>
